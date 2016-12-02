@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>Primer app </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+   <link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+<script src="phonegap.js"> </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+<!-- Start of first page -->
+<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Foo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>Hi!, this is the first page</p>
+		<a href="#bar" data-transition="flow" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-left">Siguiente</a>
+            <!-- boton secundario <button class="ui-btn">Button</button> -->
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+		<a href="#foo" data-role="button" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-left ui-corner-all ui-btn-right">Contacto</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>Hi!, this is the second page</p>
+		<p><a href="#foo" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left">Atras</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>
